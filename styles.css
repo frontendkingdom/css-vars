@@ -1,0 +1,41 @@
+:root{
+    --dark: #333;
+    --light: #fff;
+}
+body{
+    transition: all 0.4s ease-in-out;
+    background-color: var(--light);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+body *{
+    color: var(--dark);
+}
+button{
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+}
+.btn{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: var(--dark);
+    transition: all 0.4s ease-in-out;
+}
+.light-theme{
+    background-color: var(--dark);
+}
+.light-theme *{
+    color: var(--light);
+}
+.light-theme .btn{
+    background-color: var(--light);
+}
